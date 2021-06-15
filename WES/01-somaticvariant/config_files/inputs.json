@@ -1,0 +1,28 @@
+{
+  "Somatic.bwaIndex": {
+    "fastaFile": "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/bwa/reference.fa",
+    "indexFiles": [
+      "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/bwa/reference.fa.sa",
+      "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/bwa/reference.fa.amb",
+      "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/bwa/reference.fa.ann",
+      "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/bwa/reference.fa.bwt",
+      "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/bwa/reference.fa.pac"
+    ]
+  },
+  "Somatic.dbSNP": {
+    "file": "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/annotation/dbsnp/dbsnp-149.vcf.gz",
+    "index": "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/annotation/dbsnp/dbsnp-149.vcf.gz.tbi"
+  },
+  "Somatic.sampleConfigFile": "/exports/sascstudent/julian/mutationsCTCL/samplesheetref.csv",
+  "Somatic.outputDir": "/exports/sascstudent/julian/mutationsCTCL/VCF_files/ref_VCF_local_no_alt_analysis/",
+  "Somatic.reference": {
+    "fasta": "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.fa",
+    "fai": "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.fa.fai",
+    "dict": "/usr/local/Genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.dict"
+  },
+  "Somatic.dockerImagesFile": "/exports/sascstudent/julian/mutationsCTCL/scripts/pipeline/config_files/dockerImages.yml",
+  "Somatic.sample.Sample.bwaMem.threads": 8,
+  "Somatic.sample.Sample.bwaMem.memory": "32G",
+  "Somatic.sample.Sample.qc.QC.Cutadapt.cores": 4,
+  "Somatic.somaticVariantcalling.runVardict": false
+}
