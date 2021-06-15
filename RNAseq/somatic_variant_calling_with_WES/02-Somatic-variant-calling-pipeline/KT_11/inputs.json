@@ -1,0 +1,13 @@
+{
+  "Mutect2.tumorSample": "KT_11",
+  "Mutect2.tumorBam": "/exports/sasc/project-317-CALCLJulianInternship/src/10-WES-RNAseq-Somatic/01-biowdl/run-02/01-RNAseq-pipeline/samples/KT_11/KT_11.markdup.bqsr.bam",
+  "Mutect2.tumorBamIndex": "/exports/sasc/project-317-CALCLJulianInternship/src/10-WES-RNAseq-Somatic/01-biowdl/run-02/01-RNAseq-pipeline/samples/KT_11/KT_11.markdup.bqsr.bai",
+  "Mutect2.referenceFasta": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.fa",
+  "Mutect2.referenceFastaFai": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.fa.fai",
+  "Mutect2.referenceFastaDict": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.dict",
+  "Mutect2.controlBam": "/exports/sasc/project-317-CALCLJulianInternship/analysis/10-WES-RNAseq-Somatic/01-biowdl/run-01/samples/B432/B432.bqsr.bam",
+  "Mutect2.controlBamIndex": "/exports/sasc/project-317-CALCLJulianInternship/analysis/10-WES-RNAseq-Somatic/01-biowdl/run-01/samples/B432/B432.bqsr.bai",
+  "Mutect2.controlSample": "B432",
+  "Mutect2.outputDir": "/exports/sasc/project-317-CALCLJulianInternship/analysis/10-WES-RNAseq-Somatic/01-biowdl/run-02/02-Somatic-variant-calling-pipeline/KT_11",
+  "Mutect2.mutect2.timeMinutes": 3600
+}

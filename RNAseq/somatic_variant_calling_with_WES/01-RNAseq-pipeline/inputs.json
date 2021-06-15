@@ -1,0 +1,16 @@
+{
+    "RNAseq.sampleConfigFile": "/exports/sasc/project-317-CALCLJulianInternship/src/10-WES-RNAseq-Somatic/01-biowdl/run-02/01-RNAseq-pipeline/samplesheet.csv",
+    "RNAseq.dockerImagesFile": "/exports/sasc/project-317-CALCLJulianInternship/src/10-WES-RNAseq-Somatic/01-biowdl/run-02/01-RNAseq-pipeline/RNA-seq/dockerImages.yml",
+    "RNAseq.referenceFasta": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.fa",
+    "RNAseq.referenceFastaFai": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.fa.fai",
+    "RNAseq.referenceFastaDict": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/reference.dict",
+    "RNAseq.strandedness": "FR",
+    "RNAseq.refflatFile": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/annotation/features/ensembl_94/Homo_sapiens.GRCh38.94.correctedContigs.refflat",
+    "RNAseq.referenceGtfFile": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/annotation/features/ensembl_94/Homo_sapiens.GRCh38.94.correctedContigs.gtf",
+    "RNAseq.dbsnpVCF": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/annotation/dbsnp/dbsnp-149.vcf.gz",
+    "RNAseq.dbsnpVCFIndex": "/exports/genomes/species/H.sapiens/GRCh38_no_alt_analysis_set/annotation/dbsnp/dbsnp-149.vcf.gz.tbi",
+    "RNAseq.outputDir": "/exports/sasc/project-317-CALCLJulianInternship/src/10-WES-RNAseq-Somatic/01-biowdl/run-02/01-RNAseq-pipeline",
+    "RNAseq.variantCalling": true,
+    "RNAseq.makeStarIndex.timeMinutes": 360,
+    "RNAseq.makeStarIndex.memory": "50G"
+}
