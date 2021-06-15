@@ -1,0 +1,19 @@
+Very short summary of found candidate fusion genes
+==================================================
+
+The input sample contains sequencing reads mapping on: 'Moloney murine leukemia virus', 'Encephalomyocarditis virus', 'Moloney murine sarcoma virus'.
+
+Found 9 fusion gene(s), which are as follows:
+  * AGTRAP--LST1
+  * MED12--IRF2BPL
+  * ANKRD12--MOSPD3
+  * DIAPH1--CALM1
+  * NUDT3--DDOST
+  * PTEN--S100A10
+  * RASSF3--B2M
+  * STX17--ACTB
+  * TSPAN5--CXCL9
+
+Found 26 fusion transcript(s).
+
+For more detailed information regarding these candidate fusions, see text file 'final-list_candidate-fusion-genes.txt'.

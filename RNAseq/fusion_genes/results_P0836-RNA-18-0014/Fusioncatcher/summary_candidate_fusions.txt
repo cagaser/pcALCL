@@ -1,0 +1,37 @@
+Very short summary of found candidate fusion genes
+==================================================
+
+The input sample contains sequencing reads mapping on: 'Encephalomyocarditis virus', 'Human adenovirus C', 'Armadillidium vulgare iridescent virus'.
+
+Found 27 fusion gene(s), which are as follows:
+  * IGSF3--CD58  (readthrough)
+  * IFITM2--BACE1
+  * PHF2--TUBB
+  * COL6A2--SFN
+  * DOCK2--TMSB4X
+  * NUP210--GRAMD1A
+  * SEPT10--ACTR3
+  * ADCY9--CANX
+  * ARHGAP1--MALAT1
+  * ARPC2--C15ORF57
+  * BIRC3--ACBD6
+  * CYLD--YWHAB
+  * DAZAP1--ACTB
+  * FCF1--YTHDF1
+  * FUBP3--PABPC1
+  * GNA12--RRM2
+  * GNB2L1--B2M
+  * KRT10--CARM1
+  * LYZ--POLR1B
+  * NSL1--MAT2B
+  * PSMD12--COL1A1
+  * RAB11FIP3--GNB1
+  * RNF38--AQP3
+  * RTN3--IRF4
+  * SDF2--ACTB
+  * SPG21--EZR
+  * SPN--NUBPL
+
+Found 75 fusion transcript(s).
+
+For more detailed information regarding these candidate fusions, see text file 'final-list_candidate-fusion-genes.txt'.

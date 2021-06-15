@@ -1,0 +1,106 @@
+Very short summary of found candidate fusion genes
+==================================================
+
+The input sample contains sequencing reads mapping on: 'Human endogenous retrovirus K113', 'Encephalomyocarditis virus', 'BK polyomavirus'.
+
+Found 96 fusion gene(s), which are as follows:
+  * NLRP1--DERL2  (readthrough)
+  * ANKRD11--VPS9D1-AS1
+  * INPP5B--GNL2
+  * CENPE--BDH2  (readthrough)
+  * TMSB4X--TAGLN2
+  * ANKRD11--ZNF276
+  * COL6A3--RASAL3
+  * CD74--MMP2
+  * B2M--RPLP2
+  * COL1A1--LCP1
+  * NDUFA6--HSP90AB1
+  * AMPH--TRG@  (readthrough)
+  * CD74--DDX5
+  * DOCK2--FTL
+  * LCK--MALAT1
+  * LINC00657--NFKBIB
+  * PPDPF--PFN1
+  * PTMA--BRD2
+  * RFWD2--GHITM
+  * RPL11--VIM
+  * SF3B1--DIP2B
+  * TMSB4X--CTSB
+  * ACTB--FSTL1
+  * ACTB--LCP1
+  * APH1A--ACTB
+  * APPL1--COL6A3
+  * C5ORF34--EEF1A1  (reciprocal fusion)
+  * CCSAP--TXNRD2
+  * CENPE--CASP8
+  * CLCN7--CAPRIN1
+  * EEF1A1--COL1A1
+  * EMB--COL1A1
+  * GON4L--SFPQ
+  * GPR155--FSCN1
+  * IGK@--CASC5
+  * MMP2--LPCAT2  (readthrough)
+  * NAP1L1--IGFBP5
+  * NDUFV3--PKNOX1  (readthrough)
+  * PSMB2--LINC00887
+  * RPS19--SFPQ
+  * SULT1A3--NIP7
+  * TRIM56--RPAP1
+  * VAPA--EMB
+  * ACTB--LGALS3
+  * ACTN4--RALY  (reciprocal fusion)
+  * ADAMTS2--CALM1
+  * ANKRD12--MTPN  (reciprocal fusion)
+  * AOAH--B2M
+  * ARHGEF12--ARF6
+  * ASF1A--SYNCRIP
+  * ATP2B4--SEPP1
+  * BCL2L1--ZBTB7A
+  * C11ORF58--ACTR2
+  * C3--SET
+  * CAPN1--RPL15
+  * CASP3--FTL
+  * COL6A2--TPM3
+  * CPT1A--MALAT1
+  * CTSB--CDV3
+  * CTSB--SEPT11  (reciprocal fusion)
+  * EEF2--EMP3
+  * EFTUD2--LAPTM5
+  * ERCC4--TES
+  * ERP44--HMGN1
+  * ETNK1--LCP1
+  * FBN1--OAZ1
+  * FGL2--RPS8
+  * G3BP1--COL6A1
+  * GTF2H3--LRRD1
+  * IGF2R--COL6A3
+  * IKZF3--KMT5B
+  * INO80--PDIA3
+  * LARP1--OIP5-AS1
+  * LYZ--ABCD4
+  * MAU2--TOP2A
+  * MFSD7--ATP5I  (already known fusion; probably false positive; readthrough)
+  * MYOF--RNF213
+  * NCAPD2--LEPROT
+  * NCOR2--ARPC5
+  * NOSIP--PFN1
+  * P4HB--WDR1
+  * PDS5B--COL5A1
+  * PHIP--AKAP10
+  * PPP3CB--TXNIP
+  * PPTC7--MFN2
+  * PTP4A1--S100A10
+  * PTP4A2--SEPT2
+  * RCOR3--ACTR3
+  * SMAP1--TPM3
+  * SNRNP70--MBP
+  * SYNE2--MALAT1
+  * TMPO--TUBB
+  * TP53BP1--HNRNPDL
+  * TTC13--ACTR3
+  * TYMS--CXCL9
+  * XAF1--AKAP13
+
+Found 200 fusion transcript(s).
+
+For more detailed information regarding these candidate fusions, see text file 'final-list_candidate-fusion-genes.txt'.

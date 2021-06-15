@@ -1,0 +1,34 @@
+Very short summary of found candidate fusion genes
+==================================================
+
+The input sample contains sequencing reads mapping on: 'BK polyomavirus', 'Encephalomyocarditis virus', 'Saccharomyces cerevisiae killer virus M1'.
+
+Found 24 fusion gene(s), which are as follows:
+  * LINC-PINT--RNASEH2B-AS1
+  * HMHA1--CNN2  (already known fusion)
+  * SMARCAD1--TP63  (reciprocal fusion)
+  * ETS1--SLC37A4
+  * CH17-262H11.1--IGH@  (reciprocal fusion)
+  * EDC4--FLNA
+  * NMU--PDCL2  (readthrough)
+  * RNASEH2B-AS1--DLEU7  (readthrough)
+  * LUC7L3--PHF12
+  * ODC1--GLTSCR2
+  * AC004967.7--OR7E38P  (readthrough)
+  * ACOT7--HNRNPA2B1
+  * ACOT7--SRSF1
+  * ACTB--RPL35A
+  * AMD1--SPN  (reciprocal fusion)
+  * DDIT4--COPG1
+  * IKZF3--SF3B2
+  * LAP3--ACTB
+  * LDHB--ACTR2
+  * NBAS--RPL13
+  * RTN3--TUBB
+  * ST3GAL2--PRKCZ
+  * SULT1A3--NIP7
+  * UBE2E1--MALAT1
+
+Found 66 fusion transcript(s).
+
+For more detailed information regarding these candidate fusions, see text file 'final-list_candidate-fusion-genes.txt'.

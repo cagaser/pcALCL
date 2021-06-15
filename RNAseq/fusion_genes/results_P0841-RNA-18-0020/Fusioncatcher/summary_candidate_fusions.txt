@@ -1,0 +1,31 @@
+Very short summary of found candidate fusion genes
+==================================================
+
+The input sample contains sequencing reads mapping on: 'Tupaiid herpesvirus 1', 'Encephalomyocarditis virus', 'Hepatitis C virus genotype 1'.
+
+Found 21 fusion gene(s), which are as follows:
+  * USP7--SAMD11
+  * IL2RA--IGH@
+  * THOP1--GATAD2A
+  * MMS19--RRP12
+  * ACTR3--LINC01191  (readthrough)
+  * CFL1--MALAT1
+  * EP400--NCOR2  (reciprocal fusion; already known fusion)
+  * SEC11A--BIRC3
+  * PAPSS1--B2M
+  * FAM129A--TRIO
+  * GALNT7--KPNB1
+  * KIR3DP1--KIR2DL4  (readthrough)
+  * KLHL15--MKI67
+  * TAPBP--ATP6V1B2
+  * ALDOA--TUBB
+  * DOCK8--MRFAP1L1
+  * EIF3F--HSPA8
+  * FAM195A--EIF5
+  * PDK1--COL6A3
+  * RAF1--CANX
+  * RBPJ--HDGF
+
+Found 51 fusion transcript(s).
+
+For more detailed information regarding these candidate fusions, see text file 'final-list_candidate-fusion-genes.txt'.

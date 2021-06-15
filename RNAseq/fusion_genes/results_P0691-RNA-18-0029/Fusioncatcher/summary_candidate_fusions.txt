@@ -1,0 +1,70 @@
+Very short summary of found candidate fusion genes
+==================================================
+
+The input sample contains sequencing reads mapping on: 'Murine osteosarcoma virus', 'Encephalomyocarditis virus', 'Human endogenous retrovirus K113'.
+
+Found 60 fusion gene(s), which are as follows:
+  * ERBB2IP--SQRDL
+  * CD74--TMSB4X
+  * RBPJ--TRAPPC12
+  * CD74--TUBB
+  * EEF1A1--ACTG1
+  * CD74--CNN2
+  * COPZ1--CSDE1
+  * MYH9--PFN1
+  * PSMA7--PEA15
+  * CD74--HMGN1
+  * ACTR3--LINC01191  (readthrough)
+  * CCDC88B--TNFRSF8
+  * CD74--HSP90AB1
+  * CRELD1--ELF1
+  * HNRNPAB--EEF1A1
+  * MPHOSPH8--MB21D1
+  * RNF10--RHOA
+  * TMSB4X--HAPLN3
+  * TROVE2--NVL
+  * USF2--ACTB
+  * ACTB--CCR4
+  * ACTB--SMARCE1
+  * BCAT1--ARPC5
+  * CAPZB--LAPTM5
+  * CD74--SLC7A5
+  * CORO7--TOP2A
+  * COX11--GLUL
+  * CSNK1E--LRRC75A-AS1
+  * DNAJC10--EIF4G2
+  * DPY19L4--FAM107B
+  * DUSP4--NFKBIA
+  * EIF3A--TTPAL
+  * GDI2--MALAT1
+  * GNAS--OAZ1  (reciprocal fusion)
+  * GTSE1--RPS20
+  * HDLBP--SRSF3
+  * HECA--LCP1
+  * ICAM1--H2AFZ
+  * LDHB--CASP2
+  * MARK3--WDR1
+  * NAP1L1--ACTR2
+  * NDUFA12--HNRNPF
+  * NOP2--SF1
+  * NRDC--TUBB
+  * PHF14--CLDND1
+  * PHF20--HINT1
+  * PPP1CA--SRGN
+  * RAB8B--NTRK2
+  * RPS6KA1--HNRNPK
+  * RRN3--SEPT11
+  * SETD1A--HNRNPF
+  * SF3B1--MLF2
+  * SPATA5--NACA
+  * SVIL--TARDBP
+  * TNIK--ABRACL
+  * TYMS--MALAT1
+  * UBA3--FAM129A
+  * UBQLN1--RHOA
+  * VIM--ORMDL3
+  * WASF2--ACTB
+
+Found 193 fusion transcript(s).
+
+For more detailed information regarding these candidate fusions, see text file 'final-list_candidate-fusion-genes.txt'.
