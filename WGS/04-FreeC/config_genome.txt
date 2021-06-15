@@ -1,0 +1,18 @@
+###For more options see: http://boevalab.com/FREEC/tutorial.html#CONFIG ###
+
+[general]
+samtools = samtools
+sambamba = /usr/local/sasc/programs/sambamba/sambamba_v0.6.6/build/sambamba
+chrLenFile = /exports/sascstudent/julian/FreeC_Git/Homo_sapiens_assembly38_phix_stableid.fasta.fai
+window=50000
+ploidy = 2
+outputDir = /exports/sascstudent/julian/FreeC_results/ETH-2_filter/
+coefficientOfVariation= 0.05 
+chrFiles = /exports/sascstudent/julian/FreeC_Git/chrFiles/
+maxThreads=8
+gemMappabilityFile= /exports/sascstudent/julian/FreeC_Git/Homo_sapiens_assembly38_phix_stableid.fasta.fai.gem
+
+[sample]
+mateFile = /exports/sascstudent/julian/FreeC_Git/bamfiles/ETH-2_filtered.bam
+inputFormat = BAM
+mateOrientation = 0

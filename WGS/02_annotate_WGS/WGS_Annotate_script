@@ -1,0 +1,12 @@
+## aanotation code ##
+
+# Downloading genes information and savinf as bed format
+wget -qO- ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_28/gencode.v28.annotation.gff3.gz | gunzip --stdout - | awk '$3 == "gene"' - | convert2bed -i gff - > genes.bed
+
+# selecting the line with the "NPAIRS" score in the information line
+cat large_sv_calls_1.bedpe | egrep -v "NPAIRS" | bedtools sort > calls_1_NPAIRS.bed
+# selecting the lines without the pair-score parameter
+cat large_sv_calls_1.bedpe | egrep "NPAIRS" | bedtools sort > calls_1_rest.bed
+
+# combining the genes information with the calls, then select the desired columns and save the information
+bedtools intersect -a genes.bed -b calls_1_NPAIRS.bed | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13}' | tr "=" "\t" | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$7"\t"$9}' > Annotate_calls_1_NPAIRS.bed

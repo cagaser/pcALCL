@@ -1,0 +1,14 @@
+{
+  "PHASER_SVCALLER_CS.PHASER_SVCALLER._SNPINDEL_PHASER._SNPINDEL_CALLER.POPULATE_INFO_FIELDS": {
+    "split.mem_gb": 2,
+    "chunk.mem_gb": 4,
+    "join.mem_gb": 4,
+    "chunk.threads": 2
+  },
+ "PHASER_SVCALLER_CS.PHASER_SVCALLER._SNPINDEL_PHASER.ANALYZE_SNPINDEL_CALLS": {
+    "split.mem_gb": 6,
+    "chunk.mem_gb": 20,
+    "join.mem_gb": 10,
+    "chunk.threads": 1
+ }
+}
