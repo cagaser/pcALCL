@@ -1,0 +1,245 @@
+---
+title: "Shiny analysis"
+author: "Tom Kuipers"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+    theme: paper
+always_allow_html: true
+params:
+  data_samples: ""
+  data_counts: ""
+  data_annotation: ""
+  method: ""
+  excluded_samples: ""
+  design_value: ""
+  matrix_value: ""
+  alpha: ""
+---
+
+```{r setup}
+
+if (!require("knitr")) install.packages("knitr")
+if (!require("SummarizedExperiment")) install.packages("SummarizedExperiment")
+if (!require("edgeR")) install.packages("edgeR")
+if (!require("tidyr")) install.packages("tidyr")
+if (!require("ggplot2")) install.packages("ggplot2")
+if (!require("scales")) install.packages("scales")
+if (!require("plotly")) install.packages("plotly")
+
+source("functions.R")
+
+```
+
+```{r variables}
+# VARIABLES
+
+data_samples <- params$data_samples
+data_counts <- params$data_counts
+data_annotation <- params$data_annotation
+method <- params$method
+excluded_samples <- params$excluded_samples
+design_value <- params$design_value
+matrix_value <- params$matrix_value
+alpha <- params$alpha
+
+```
+
+```{r showVariables}
+
+method
+excluded_samples
+design_value
+matrix_value
+alpha
+
+```
+
+
+
+```{r showRawData}
+#READ DATA INTO VARIABLE
+
+#data_samples <- read.csv("~/Desktop/final_310/meta2.csv", row.names=1, header = TRUE, sep = ",")
+
+#data_counts <- read.csv("~/Desktop/final_310/all_samples.fragments_per_gene.tsv", row.names=1, header = TRUE, sep = "\t")
+#data_counts <- data_counts[!grepl('^__', rownames(data_counts)),]
+
+#data_annotation <- read.csv("~/Desktop/final_310/gene_annotation.tsv", row.names=1, header = TRUE, sep = "\t")
+
+```
+
+
+```{r filesIntoSE}
+#READ FILES INTO SE (function: alignment)
+
+se <- addSamplesFromTableToSE(se, data_samples)
+se <- addAnnotationsFromTableToSE(se, data_annotation)
+
+```
+
+```{r dge}
+#GET DGE
+
+dge <- DGEList(counts = assay(se), samples = colData(se), genes = rowData(se))
+row.names(dge$genes) <- row.names(dge$counts)
+
+dge <- dge[ rowSums( abs( dge$counts ) ) > 1, ]
+
+countDistributionLinePlot(dge)
+
+```
+
+```{r selectedFeatures}
+#GET HIGH EXPRESSED FEATURES (function: raw_data)
+
+#? Szymon how to determine which method to use
+#p310 uses edger, for edger analysis
+#p306 uses else, for edger and voom/limma analysis
+
+if (method == "edger") {
+  edger <- calcNormFactors( dge, method = "TMM")
+  counts <- cpm(edger, log = TRUE)
+  selectedFeatures <- rownames( edger )[ apply( counts, 1, function( v ) sum( v >= 1 ) ) >= 1/4 * ncol( counts ) ]
+
+} else {
+  #selectedFeatures <- filterByExpr(dge, model.matrix(eval(parse(text=design_value)), dge$samples ))
+  selectedFeatures <- ( rowSums( cpm( dge ) > 10 ) >= 3 )
+}
+
+#GET HIGH EXPRESSED FEATURES (function: raw_data)
+
+highExprDge <- dge[ selectedFeatures,, keep.lib.sizes = FALSE ]
+
+```
+
+
+```{r normalize}
+# NORMALISE DATA (function: norm_data)
+
+normDge <- calcNormFactors( highExprDge, method = "TMM")
+
+# FILTER SAMPLES IF NECESSARY
+
+if (!is.null(excluded_samples)) {
+  normDge$counts <- normDge$counts[,!colnames(normDge$counts) %in% excluded_samples]
+  data_samples <- data_samples[!rownames(data_samples) %in% excluded_samples, ]
+  data_samples <- droplevels(data_samples)
+  
+  se <- addSamplesFromTableToSE(se, data_samples)
+  
+  tempDge <- DGEList(counts = normDge$counts, samples = colData(se), genes = normDge$genes)
+  tempDge <- calcNormFactors( tempDge, method = "TMM")
+  normDge <- tempDge
+}
+
+tempDge <- normDge
+tempDge$counts <- 2^(cpm(normDge, log = TRUE))
+countDistributionLinePlot(tempDge)
+variancePcaPlot(tempDge)
+
+```
+
+```{r design}
+# CREATE DESIGN
+
+design <- model.matrix(eval(parse(text=design_value)), normDge$samples)
+design
+
+#moet dit in een specifieke volgorde?: (~0 + dex + celltype - VS - ~0 + celltype + dex)
+for (design_column in colnames(design)) {
+  for (sample_column in colnames(normDge$samples)) {
+    if (grepl(sample_column, design_column)) {
+      colnames(design) <- sub(sample_column, "", colnames(design))
+    }
+  }
+}
+
+matrix_value <- strsplit(matrix_value, ",")[[1]]
+contr.matrix <- makeContrasts(contrasts = matrix_value, levels=design)
+contr.matrix
+
+```
+
+```{r analysis}
+# FIT
+
+if (method == "edger") {
+  #normDge <- estimateGLMCommonDisp(normDge, design)
+  #normDge <- estimateGLMTrendedDisp(normDge, design)
+  #normDge <- estimateGLMTagwiseDisp(normDge, design)
+  normDge <- estimateDisp(normDge, design)
+  vfit <- glmFit(normDge, design)
+  efit <- glmLRT(vfit, contrast = contr.matrix)
+  
+} else {
+  voom <- voom(normDge, design)
+  vfit <- lmFit(voom)
+  vfit <- contrasts.fit(vfit, contrasts = contr.matrix)
+  efit <- eBayes(vfit)
+  
+}
+
+efit$DE <- decideTests(efit, p.value = alpha)
+summary(efit$DE)
+
+```
+
+
+```{r showDGEResult}
+# CREATE deTab TABLE
+
+if (method == "edger") {
+  deTab <- topTags(efit, n=Inf)$table
+  deTab <- deTab[order(rownames(deTab)),]
+  deTab$DE <- efit$DE
+  deTab$avgLog2CPM <- efit$table$logCPM
+  deTab$avgLog2FC <- efit$table$logFC
+  deTab$adj.P.Val <- p.adjust(deTab$PValue, method = "BH")
+  colnames(deTab)[colnames(deTab)=="PValue"] <- "P.Value"
+  
+} else {
+  deTab <- data.frame(topTable(efit, coef=1, n=Inf))
+  deTab <- deTab[order(rownames(deTab)),]
+  deTab$DE <- efit$DE
+  colnames(deTab)[colnames(deTab)=="logFC"] <- "avgLog2FC"
+  colnames(deTab)[colnames(deTab)=="AveExpr"] <- "avgLog2CPM"
+}
+
+maPlot(deTab)
+pValuePlot(deTab)
+
+# GET DE GENES
+
+allGenes <- deTab
+allGenes <- allGenes[order(rank(allGenes$adj.P.Val)),]
+  
+DEG <- allGenes[allGenes$adj.P.Val < alpha,]
+
+#EXTRA FILTER LOGFC
+DEG <- DEG[which(DEG$avgLog2FC < -2 | DEG$avgLog2FC > 2),]
+up <- DEG[which(DEG$DE == 1),]
+down <- DEG[which(DEG$DE == -1),]
+deTab <- deTab[which(deTab$avgLog2FC < -2 | deTab$avgLog2FC > 2),]
+
+```
+
+```{r save}
+# ENRICHMENT ANALYSIS
+
+save(efit, file="efit.RData")
+
+# SAVE ANALYSIS
+
+normDge$counts <- 2^(cpm(normDge, log = TRUE))
+save(deTab, normDge, allGenes, DEG, file="analysis.RData")
+
+```
+
+```{r session}
+#INFO
+
+sessionInfo()
+```
