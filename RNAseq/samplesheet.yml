@@ -1,0 +1,377 @@
+samples:
+- id: KT_1
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-001_KT_1_ATCACGAT-CGCCTTAG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-001_KT_1_ATCACGAT-CGCCTTAG_L004_R2.fastq.gz
+- id: KT_2
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-002_KT_2_GCCAATAT-CGCCTTAG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-002_KT_2_GCCAATAT-CGCCTTAG_L004_R2.fastq.gz
+- id: KT_3
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-003_KT_3_GCCAATAT-CGCTCGCG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-003_KT_3_GCCAATAT-CGCTCGCG_L004_R2.fastq.gz
+- id: KT_4
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-004_KT_4_CAGATCAT-CTGATGAG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-004_KT_4_CAGATCAT-CTGATGAG_L004_R2.fastq.gz
+- id: KT_5
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-005_KT_5_ATCACGAT-CAGTACGG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-005_KT_5_ATCACGAT-CAGTACGG_L004_R2.fastq.gz
+- id: KT_6
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-006_KT_6_GATCAGAT-CAGTACGG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-006_KT_6_GATCAGAT-CAGTACGG_L004_R2.fastq.gz
+- id: KT_7
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-007_KT_7_CAGATCAT-CAGTACGG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-007_KT_7_CAGATCAT-CAGTACGG_L004_R2.fastq.gz
+- id: KT_8
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/KT_8_S1_L004_R1_001.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/KT_8_S1_L004_R2_001.fastq.gz
+- id: KT_9
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-009_KT_9_TTAGGCAT-GAGATAGG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-009_KT_9_TTAGGCAT-GAGATAGG_L004_R2.fastq.gz
+- id: KT_10
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-010_KT_10_TGACCAAT-TGTCGAGG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-010_KT_10_TGACCAAT-TGTCGAGG_L004_R2.fastq.gz
+- id: KT_11
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-011_KT_11_ACAGTGAT-GTAGATCG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-011_KT_11_ACAGTGAT-GTAGATCG_L004_R2.fastq.gz
+- id: KT_12
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-012_KT_12_TGACCAAT-CGCCTTAG_L004_R1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/cACLCL/H2CWCBBXY_103446-001-012_KT_12_TGACCAAT-CGCCTTAG_L004_R2.fastq.gz
+- id: ERR431582
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431582_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431582_2.fastq.gz
+- id: ERR431598
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431598_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431598_2.fastq.gz
+- id: ERR431614
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431614_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431614_2.fastq.gz
+- id: ERR431620
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431620_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431620_2.fastq.gz
+- id: ERR431626
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431626_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_CM/ERR431626_2.fastq.gz
+- id: ERR431575
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431575_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431575_2.fastq.gz
+- id: ERR431576
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431576_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431576_2.fastq.gz
+- id: ERR431588
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431588_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431588_2.fastq.gz
+- id: ERR431603
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431603_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431603_2.fastq.gz
+- id: ERR431616
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431616_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_EM/ERR431616_2.fastq.gz
+- id: ERR431571
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431571_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431571_2.fastq.gz
+- id: ERR431574
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431574_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431574_2.fastq.gz
+- id: ERR431580
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431580_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431580_2.fastq.gz
+- id: ERR431581
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431581_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431581_2.fastq.gz
+- id: ERR431610
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431610_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Naive/ERR431610_2.fastq.gz
+- id: ERR431595
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431595_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431595_2.fastq.gz
+- id: ERR431597
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431597_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431597_2.fastq.gz
+- id: ERR431604
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431604_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431604_2.fastq.gz
+- id: ERR431618
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431618_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431618_2.fastq.gz
+- id: ERR431625
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431625_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th17/ERR431625_2.fastq.gz
+- id: ERR431570
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431570_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431570_2.fastq.gz
+- id: ERR431577
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431577_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431577_2.fastq.gz
+- id: ERR431584
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431584_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431584_2.fastq.gz
+- id: ERR431587
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431587_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431587_2.fastq.gz
+- id: ERR431622
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431622_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th1/ERR431622_2.fastq.gz
+- id: ERR431566
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431566_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431566_2.fastq.gz
+- id: ERR431579
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431579_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431579_2.fastq.gz
+- id: ERR431600
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431600_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431600_2.fastq.gz
+- id: ERR431615
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431615_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431615_2.fastq.gz
+- id: ERR431628
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431628_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Th2/ERR431628_2.fastq.gz
+- id: ERR431583
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431583_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431583_2.fastq.gz
+- id: ERR431589
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431589_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431589_2.fastq.gz
+- id: ERR431601
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431601_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431601_2.fastq.gz
+- id: ERR431606
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431606_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431606_2.fastq.gz
+- id: ERR431609
+  libraries:
+  - id: lib1
+    readgroups:
+    - id: rg1
+      reads:
+        R1: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431609_1.fastq.gz
+        R2: /exports/sasc/project-317-CALCLJulianInternship/data/CD4/CD4_Treg/ERR431609_2.fastq.gz
